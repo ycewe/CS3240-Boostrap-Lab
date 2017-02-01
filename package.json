@@ -1,0 +1,23 @@
+{
+  "name": "cs3240_lab1",
+  "version": "1.0.0",
+  "description": "A simple html, css, jQuery and bootstrap website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycewe/cs3240-lab1.git"
+  },
+  "author": "Eric Ewe (a0112204@u.nus.edu)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ycewe/cs3240-lab1/issues"
+  },
+  "homepage": "https://github.com/ycewe/cs3240-lab1#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
