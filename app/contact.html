@@ -9,16 +9,19 @@
           <label for="inputEmail">Email</label>
           <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+          <div id="emailFeedback" class="text-danger"></div>
         </div>
         <div class="form-group">
           <label for="inputName">Name</label>
           <input type="password" class="form-control" id="inputName" placeholder="Enter Name">
+          <div id="nameFeedback" class="text-danger"></div>
         </div>
         <div class="form-group">
           <label for="inputMessage">Message</label>
           <textarea class="form-control" id="inputMessage" rows="3" placeholder="Enter Message"></textarea>
+          <div id="msgFeedback" class="text-danger"></div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="button" id="submitForm" type="submit" class="btn btn-primary" value="Submit">
       </form>
     </div>
   </div>
