@@ -1,5 +1,5 @@
 body {
-  background: url("../images/img2.jpg") no-repeat center top fixed;
+  background: url("../images/img1.jpg") no-repeat center top fixed;
   background-size: cover;
 }
 
@@ -25,12 +25,6 @@ body {
 
 #navbarNav {
   justify-content: flex-end;
-}
-
-#page-image {
-  padding: 0;
-  height: 100vh;
-  background: black;
 }
 
 #page-image-image {
