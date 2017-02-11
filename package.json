@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/ycewe/cs3240-lab1#readme",
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "nodemailer": "^3.0.2"
+  },
+  "devDependencies": {
+    "express-spa": "0.0.2"
   }
 }

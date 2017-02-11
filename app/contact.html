@@ -1,21 +1,24 @@
 <div id="contact-body" class="container-fluid">
-  <div id="contact-form" class="">
+  <div id="contact-image" class="hidden-md-down text-center" />
+  <div id="offset" class="hidden-lg-up" />
+  <div id="contact-form" class="container">
+    <div id="contact-title" class="text-center">If you have any inquiry or would like request of assistance in choreography, feel free to contact me here.</div>
     <div class="submit-toast alert alert-success" role="alert">
-      <strong>Submitted!</strong> Your request has been recorded and will be replied to promptly.
+      <strong>Submitted!</strong>
     </div>
-    <form>
-      <div class="form-group">
+    <form class="row">
+      <div class="form-group col-md-6">
+        <label for="inputName">Name</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
+        <div id="nameFeedback" class="text-danger"></div>
+      </div>
+      <div class="form-group col-md-6">
         <label for="inputEmail">Email</label>
         <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
         <div id="emailFeedback" class="text-danger"></div>
       </div>
-      <div class="form-group">
-        <label for="inputName">Name</label>
-        <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
-        <div id="nameFeedback" class="text-danger"></div>
-      </div>
-      <div class="form-group">
+      <div class="form-group col-md-12">
         <label for="inputMessage">Message</label>
         <textarea class="form-control" id="inputMessage" rows="3" placeholder="Enter Message"></textarea>
         <div id="msgFeedback" class="text-danger"></div>

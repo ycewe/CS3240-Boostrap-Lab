@@ -1,20 +1,21 @@
 var express = require('express');
+var spa = require('express-spa');
+var path = require('path');
 var app = express();
 var port = 4000;
 
-app.use(express.static(__dirname + '/app'));
+app.use('/', express.static(path.join(__dirname, 'app')));
 
-app.get('/',function(req,res){
-  res.sendFile('index.html');
-  //It will find and locate index.html from View or Scripts
+app.get('/', function(req,res) {
+  res.sendFile(path.join(__dirname, 'app/index.html'));
 });
 
-app.get('/portfolio',function(req,res){
-  res.sendFile('/portfolio.html');
+app.get('/portfolio', function(req,res) {
+  res.sendFile(path.join(__dirname, 'app/index.html'));
 });
 
-app.get('/contact',function(req,res){
-  res.sendFile('/contact.html');
+app.get('/contact', function(req,res){
+  res.sendFile(path.join(__dirname, 'app/index.html'));
 });
 
 app.listen(port);
