@@ -9,8 +9,9 @@ A simple portfolio with HTML5, CSS3, jQuery with Bootstrap 4 styling.
 ## Miscellaneous
 1. Main page is index.html. This is a Single Page Application.
 2. The webpage is a dance portfolio. It records most of my dance achievements and performances to date. Perhaps, in the future it point of contact as well as publicity for a part-time career.
-3. Bootstrap and jQuery are downloaded files and are located in the css folder and scripts respectively. Form validation is done in script.js and the primary css code is in main.css. Below is the directory that shows _self-written code_:
-   ```
+3. Reference: https://v4-alpha.getbootstrap.com/
+4. Bootstrap and jQuery are downloaded files and are located in the css folder and scripts respectively. Form validation is done in script.js and the primary css code is in main.css. Below is the directory that shows _self-written code_:
+```
    ├── app
    │   ├── scripts
    │   │   ├── script.js
@@ -24,8 +25,7 @@ A simple portfolio with HTML5, CSS3, jQuery with Bootstrap 4 styling.
    │   ├── home.html
    ├── server.js
    ├── README.md
-   ```
-4. I do not have any specific reference for my webpage.
+```
 
 ## Features
 * Grid system is used in the portfolio for structuring.
