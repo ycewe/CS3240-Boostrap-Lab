@@ -1,5 +1,4 @@
 var express = require('express');
-var spa = require('express-spa');
 var path = require('path');
 var app = express();
 var port = 4000;

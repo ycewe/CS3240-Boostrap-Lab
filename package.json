@@ -1,5 +1,5 @@
 {
-  "name": "cs3240_lab1",
+  "name": "cs3240_bootstrap_lab",
   "version": "1.0.0",
   "description": "A simple html, css, jQuery and bootstrap website",
   "main": "server.js",
@@ -18,10 +18,6 @@
   },
   "homepage": "https://github.com/ycewe/cs3240-lab1#readme",
   "dependencies": {
-    "express": "^4.14.1",
-    "nodemailer": "^3.0.2"
-  },
-  "devDependencies": {
-    "express-spa": "0.0.2"
+    "express": "^4.14.1"
   }
 }

@@ -14,15 +14,10 @@ body {
 }
 
 #header {
-  display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   padding-bottom: 0;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#navbarNav {
-  justify-content: flex-end;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 #page-image-image {
@@ -145,7 +140,7 @@ body {
 }
 
 a {
-  margin-left: 5px;
+  margin-left: 0.25em;
   color: white;
 }
 
