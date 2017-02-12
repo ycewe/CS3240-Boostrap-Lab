@@ -25,19 +25,19 @@ body {
 }
 
 #portfolio-image {
-  background: url(../images/img1.jpg) no-repeat center top fixed;
+  background: url(../images/portfolio-img.jpg) no-repeat center top fixed;
   height: 450px;
   background-size: cover;
 }
 
 #contact-body {
-  background: url(../images/img2.jpg) no-repeat center top fixed;
+  background: url(../images/contact-img.jpg) no-repeat center top fixed;
   background-size: cover;
   height: 100vh;
 }
 
 #home-image {
-  background: url(../images/main-img.png) no-repeat center top fixed;
+  background: url(../images/home-img.png) no-repeat center top fixed;
   height: 450px;
   background-size: cover;
 }
