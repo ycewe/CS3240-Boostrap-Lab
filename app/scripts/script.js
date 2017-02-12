@@ -60,11 +60,7 @@ $(document).ready(function() {
       dataType: "html",
       success: function(response) {
         $('#page-body').html(response);
-        /*
-        if(pageRefInput === HOME_PAGE) {
-          $('#home-body').show().animate({top: 0, opacity: 1}, 400);
-        } else {
-        */
+
         if(pageRefInput === HOME_PAGE) {
           $('#home-body').show().animate({top: 0, opacity: 1}, 400);
         } else if(pageRefInput === PORTFOLIO_PAGE) {
@@ -72,18 +68,29 @@ $(document).ready(function() {
         } else if(pageRefInput === CONTACT_PAGE) {
           $('#contact-body').show().animate({top: 0, opacity: 1}, 400);
 
-          $('#submitForm').on('click', function(e) {
+          $('#submit-form').on('click', function(e) {
             e.preventDefault();
 
             if(validateContactForm()) {
-              $('<span>Thank you ' + $('#inputName').val() + '! Your request has been noted.</span>').appendTo('.submit-toast');
-              $('.submit-toast').show();
-              $('#inputName').val('');
-              $('#inputMessage').val('');
-              $('#inputEmail').val('')
+              $('<span>Thank you ' + $('#input-name').val() + '! Your request has been noted.</span>').appendTo('#submit-toast');
+              $('#submit-toast').show();
+              $('#clear-toast').hide();
+              $('#input-name').val('');
+              $('#input-message').val('');
+              $('#input-email').val('')
             } else {
-              $('.submit-toast').hide();
+              $('#submit-toast').hide();
+              $('#clear-toast').hide();
             }
+          });
+
+          $('#clear-form').on('click', function(e) {
+            e.preventDefault();
+            $('#clear-toast').show();
+            $('#submit-toast').hide();
+            $('#input-name').val('');
+            $('#input-message').val('');
+            $('#input-email').val('')
           });
         }
       },
@@ -115,30 +122,30 @@ $(document).ready(function() {
     var submit = true;
 
     /* email validation */
-    if($('#inputEmail').val().length == 0) {
-      $('#emailFeedback').text(EMAIL_EMPTY_ERROR);
+    if($('#input-email').val().length == 0) {
+      $('#email-feedback').text(EMAIL_EMPTY_ERROR);
       submit = false;
-    } else if($('#inputEmail').val().indexOf('@') < 0 || $('#inputEmail').val().indexOf('.com') < 0) {
-      $('#emailFeedback').text(EMAIL_VALIDATION_ERROR);
+    } else if($('#input-email').val().indexOf('@') < 0 || $('#input-email').val().indexOf('.com') < 0) {
+      $('#email-feedback').text(EMAIL_VALIDATION_ERROR);
       submit = false;
     } else {
-      $('#emailFeedback').empty();
+      $('#email-feedback').empty();
     }
 
     /* name validation */
-    if($('#inputName').val().length == 0) {
-      $('#nameFeedback').text(NAME_EMPTY_ERROR);
+    if($('#input-name').val().length == 0) {
+      $('#name-feedback').text(NAME_EMPTY_ERROR);
       submit = false;
     } else {
-      $('#nameFeedback').empty();
+      $('#name-feedback').empty();
     }
 
     /* message validation */
-    if($('#inputMessage').val().length == 0) {
-      $('#msgFeedback').text(MESSAGE_EMPTY_ERROR);
+    if($('#input-message').val().length == 0) {
+      $('#msg-feedback').text(MESSAGE_EMPTY_ERROR);
       submit = false
     } else {
-      $('#msgFeedback').empty();
+      $('#msg-feedback').empty();
     }
 
     return submit;

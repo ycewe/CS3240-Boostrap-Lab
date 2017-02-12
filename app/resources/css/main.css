@@ -1,24 +1,24 @@
 body {
-  background-size: cover;
+  background-color: black;
 }
 
 #page-body {
   padding: 0;
   margin: 0;
   text-align: center;
-  color: white;
 }
 
 #home-body {
   padding: 80px 20px;
   text-align: center;
-  opacity: 0.2;
 }
 
 #header {
   display: flex;
-  background-color: white;
-  box-shadow: 0px 3px 5px #888888;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #navbarNav {
@@ -35,8 +35,14 @@ body {
   background-size: cover;
 }
 
-#contact-image {
+#contact-body {
   background: url(../images/img2.jpg) no-repeat center top fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+#home-image {
+  background: url(../images/main-img.png) no-repeat center top fixed;
   height: 450px;
   background-size: cover;
 }
@@ -47,15 +53,29 @@ body {
   margin-bottom: 20px;
 }
 
-#submitForm {
-  margin: 0 15px;
+#home-content {
+  margin: 20px;
 }
 
-#portfolio-body, #contact-body {
+#main-description {
+  color: white;
+  font-size: 25px;
+}
+
+#name {
+  margin: 20px;
+  color: white;
+}
+
+#subtitle {
+  font-size: 21px;
+  color: grey;
+  margin-bottom: 30px;
+}
+
+#portfolio-body, #contact-body, #home-body {
   padding: 0;
-  background-color: white;
-  box-shadow: 3px 3px 5px #888888;
-  color: black;
+  color: white;
   text-align: left;
   top: -20px;
   opacity: 0.2;
@@ -64,7 +84,7 @@ body {
 .event-name {
   font-weight: 400;
   padding: 0 10px 0 0;
-  color: black;
+  color: white;
 }
 
 .event-list {
@@ -82,20 +102,40 @@ body {
 }
 
 #ballroom-dance {
-  margin-bottom: 20px;
+  margin: 15px 20px;
 }
 
 #contact-form {
-  padding: 20px;
+  max-width: 600px;
+  background-color: white;
+  padding: 30px;
+  margin: 5px 35px;
+  top: 100px;
+  color: black;
 }
 
-.submit-toast {
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../images/mobile-nav-icon.png);
+}
+
+#submit-toast, #clear-toast {
   margin: 0 0 30px 0;
   display: none;
 }
 
+#clear-form {
+  margin-top: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
 .navbar-brand {
-  padding-left: 18px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+  color: cyan;
 }
 
 .nav {
@@ -104,12 +144,35 @@ body {
   padding-top: 10px;
 }
 
-.nav-pills .nav-link.active {
-  color: black;
-  background-color: white;
-  border: 2px solid black;
+a {
+  margin-left: 5px;
+  color: white;
 }
 
-#offset {
-  height: 70px;
+.nav-pills .nav-link.active {
+  color: white;
+  border-bottom: 3px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 15px;
+  border-radius: 0;
+}
+
+.nav-link {
+  padding: 0.5em 0.5em;
+}
+
+a:focus, a:hover {
+  color: cyan;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
+  color: cyan;
+}
+
+#offset-contact {
+  height: 50px;
+}
+
+#offset-portfolio {
+  height: 110px;
 }
